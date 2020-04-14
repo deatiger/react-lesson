@@ -11,7 +11,7 @@ class ContentBox01 extends Component {
     }
 
     SearchWindow = [
-        { icon: <SearchIcon />, placeholderText: 'Start your search', buttonText: 'search' }
+        { icon: <SearchIcon />, placeholderText: 'Start your search', buttonText: 'Search' }
     ]
 
     render(){
