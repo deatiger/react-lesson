@@ -923,10 +923,11 @@ footer {
     border-radius: 4px 0 0 4px;
     text-align: center;
     padding-left: 8px;
+    align-items: center;
     .MuiSvgIcon-root {
       color: #adb7cc;
       // font-size: 24px;
-      height: 100%;
+      // height: 100%;
     }
   }
   .search-window {
