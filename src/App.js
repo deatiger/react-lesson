@@ -35,7 +35,7 @@ class App extends React.Component {
         return <h2 className="modal-title">すみません。<br/>これはダミーリンクです！</h2>
       } else if (props.count == 2) {
         return <h2 className="modal-title">ごめんなさい。<br/>これもダミーリンクです！</h2>
-      } else if (props.count == 3) {
+      } else if (props.count >= 3) {
         return <h2 className="modal-title">ダミーリンクだらけでごめんなさい。。。</h2>
       }
     }
