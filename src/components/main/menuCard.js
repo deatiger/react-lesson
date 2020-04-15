@@ -43,7 +43,7 @@ class MenuCard extends Component {
                                     <a href="#" className="view-btn">
                                         <span className="icon-view"><VisibilityIcon /></span>
                                     </a>
-                                    <div className="view-btn" onClick={()=> {this.props.openModal()}}>
+                                    <div className="view-btn" onClick={()=> this.countUp()}>
                                         <span className="icon-like"><FavoriteIcon /></span>
                                     </div>
                                 </div>
@@ -52,7 +52,10 @@ class MenuCard extends Component {
                         <div className="content-bottom">
                             <div className="row01">
                                 <p className="sub-title">{this.props.subTitle}</p>
-                                <div className="review-stars">stars: {this.props.stars}</div>
+                                <div className="icon-like-box">
+                                    <div className="icon-like"><FavoriteIcon /></div>
+                                    <div className="like-count">{this.state.count}</div>
+                                </div>
                             </div>
                             <h5 className="row02">{this.props.title}</h5>
                             <div className="row03">

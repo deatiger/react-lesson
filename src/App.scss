@@ -462,8 +462,15 @@
                 color: #7d879c;
                 font-size: 12px;
               }
-              .review-stars {
-                font-size: 12px;
+              .icon-like-box {
+                display: flex;
+                .icon-like {
+                  padding: 0 4px;
+                  color: #fe796A;
+                }
+                .like-count {
+                  padding: 4px 0;
+                }
               }
             }
             .row02 {
@@ -587,9 +594,19 @@
                 font-size: 8px;
                 overflow: hidden;
               }
-              .review-stars {
-                display: none;
-                font-size: 12px;
+              .icon-like-box {
+                display: flex;
+                .icon-like {
+                  padding: 0 4px;
+                  color: #fe796A;
+                  .MuiSvgIcon-root {
+                    font-size: 18px;
+                  }
+                }
+                .like-count {
+                  font-size: 12px;
+                  padding: 4px 0;
+                }
               }
             }
             .row02 {
