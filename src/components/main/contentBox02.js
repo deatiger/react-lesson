@@ -47,9 +47,9 @@ function ContentBox02(props) {
                             </p>
                         </div>
                         <div className="flex-menu-area">
-                            <MenuCard pic={menuProps[0].pic} title={menuProps[0].title} subTitle={menuProps[0].subTitle} stars={menuProps[0].stars} sales={menuProps[0].sales} price={menuProps[0].price} openModal={()=> props.openModal()} />
-                            <MenuCard pic={menuProps[1].pic} title={menuProps[1].title} subTitle={menuProps[1].subTitle} stars={menuProps[1].stars} sales={menuProps[1].sales} price={menuProps[1].price} openModal={()=> props.openModal()} />
-                            <MenuCard pic={menuProps[2].pic} title={menuProps[2].title} subTitle={menuProps[2].subTitle} stars={menuProps[2].stars} sales={menuProps[2].sales} price={menuProps[2].price} openModal={()=> props.openModal()} />
+                            {
+                                [0,1,2].map((index) => <MenuCard key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />)
+                            }
                         </div>
                     </div>
                 </div>

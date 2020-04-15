@@ -34,11 +34,11 @@ function ContentBox03(props) {
                         </div>
                         <div className="horizontal-list">
                             { 
-                                [0,1,2,3].map((index) => <MenuCard pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
+                                [0,1,2,3].map((index) => <MenuCard key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
                             }                        </div>
                         <div className="horizontal-list">
                             { 
-                                [4,5,6,7].map((index) => <MenuCard pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
+                                [4,5,6,7].map((index) => <MenuCard key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
                             }                        </div>
                         <div className="view-more-area">
                             <a href="#" className="view-more-link">
@@ -56,12 +56,12 @@ function ContentBox03(props) {
                         </div>
                         <div className="flex-menu-area">
                             { 
-                                [0,1,2,3].map((index) => <MenuCard pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
+                                [0,1,2,3].map((index) => <MenuCard key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
                             }
                         </div>
                         <div className="flex-menu-area">
                             { 
-                                [4,5,6,7].map((index) => <MenuCard pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
+                                [4,5,6,7].map((index) => <MenuCard key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
                             }                        
                         </div>
                         <div className="view-more-area">

@@ -29,7 +29,6 @@ class App extends React.Component {
   }
 
   render() {
-
     function ModalTitle(props) {
       if　(props.count == 1) {
         return <h2 className="modal-title">すみません。<br/>これはダミーリンクです！</h2>
@@ -39,7 +38,6 @@ class App extends React.Component {
         return <h2 className="modal-title">ダミーリンクだらけでごめんなさい。。。</h2>
       }
     }
-
     return (
       <React.Fragment>
         <Header />
