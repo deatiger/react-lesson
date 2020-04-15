@@ -7,6 +7,8 @@
 
 ・react-router-dom
 
+・class component (ライフサイクル)
+
 ・redux
 
 ・reduxーthunk, axios
