@@ -1,3 +1,21 @@
+.modal-box {
+  text-align: center;
+  .modal-title {
+    z-index: 11;
+    color: #fe796A;
+  }
+  .modal-btn {
+    background-color: #fe796A;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    height: 42px;
+    width: 80%;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
 .main-area-pc {
   .header-default {
     height: 10vh;
@@ -219,6 +237,7 @@
                   padding: 12px;
                   margin: 0 1vw;
                   border-radius: 8px;
+                  cursor: pointer;
                   &:hover {
                     .icon-view {
                       color: rgb(20, 154, 237);
@@ -519,6 +538,7 @@
                   padding: 10px;
                   margin: 0 1vw;
                   border-radius: 8px;
+                  cursor: pointer;
                   .MuiSvgIcon-root {
                     font-size: 16px;
                   }
@@ -676,6 +696,17 @@ footer {
           color: white;
         }
       }
+      p {
+        display: block;
+        text-decoration: none;
+        color: rgba(255,255,255,0.65);
+        margin: 0;
+        padding: 8px 0;
+        cursor: pointer;
+        &:hover {
+          color: white;
+        }
+      }
     }
     .right-box-02 {
       // background-color: green;
@@ -685,11 +716,13 @@ footer {
         margin: 0;
         padding: 16px 0;
       }
-      a {
+      p {
         display: block;
         text-decoration: none;
         color: rgba(255,255,255,0.65);
+        margin: 0;
         padding: 8px 0;
+        cursor: pointer;
         &:hover {
           color: white;
         }

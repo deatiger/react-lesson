@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import './index.css';
 import App from './App';
+import PortfolioMain from './components/main/showPortfolio/portfolioMain';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route exact path="/portfolio" component={PortfolioMain} />
+        {/* <Route path="/events/new" component={eventsNew} /> */}
+        {/* <Route path="/events/:id" component={eventsShow} /> */}
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
