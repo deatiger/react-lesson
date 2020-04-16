@@ -72,7 +72,7 @@ class MenuCard extends Component {
                             <img src={this.props.pic} className="image" alt="picture" />
                             <div className="hover-view-box">
                                 <div className="hover-view-row">
-                                    <Link to="/portfolio" className="view-btn">
+                                    <Link to={"/portfolio/" + this.props.id} className="view-btn">
                                         <span className="icon-view"><VisibilityIcon /></span>
                                     </Link>
                                     <div className="view-btn" onClick={()=> this.countUp()}>

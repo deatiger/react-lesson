@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MediaQuery from "react-responsive";
 
 function Header(props) {

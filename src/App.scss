@@ -940,6 +940,174 @@ footer {
 
 }
 
+.portfolio-main-area-pc {
+  .header-default {
+    height: 10vh;
+  }
+  .cnt-box-01 {
+    position: relative;
+    .text-box {
+      // background-color: rgb(247, 132, 150);
+      display: flex;
+      justify-content: space-between;
+      padding: 0 48px;
+      .left-box {
+        color: white;
+        font-size: 28px;
+        font-weight: 500;
+        height: 120px;
+        line-height: 120px;
+      }
+      .right-box {
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 52px 32px;
+      }
+    }
+    .background {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 280px;
+      background-color: #4e54c8;
+    }
+  }
+  .cnt-box-02 {
+    padding: 0 48px;
+    margin-bottom: 80px;
+    .portfolio-box {
+      background-color: white;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0.4rem 1.525rem -0.375rem rgba(0,0,0,0.2);
+      display: flex;
+      .left-box {
+        width: 64%;
+        padding: 36px 28px;
+        border-right: solid 1.4px rgb(227, 233, 239);;
+        .row01 {
+          // background-color: yellowgreen;
+          height: 60vh;
+          border-radius: 8px;
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            object-position: 70% 0%;
+          }
+        }
+        .row02 {
+          display: flex;
+          justify-content: space-between;
+          padding: 32px 0;
+          .left {
+            background-color: teal;
+            height: 30vh;
+            width: 48%;
+            border-radius: 8px;
+            img {
+              object-fit: cover;
+              height: 100%;
+              width: 100%;
+              border-radius: 8px;
+            }
+          }
+          .right {
+            background-color: sienna;
+            height: 30vh;
+            width: 48%;
+            border-radius: 8px;
+            img {
+              object-fit: cover;
+              height: 100%;
+              width: 100%;
+              border-radius: 8px;
+            }
+          }
+        }
+        .row03 {
+          // background-color: rgb(247, 132, 150);
+          height: 20vh;
+          border-top: solid 1.4px rgb(227, 233, 239);;
+        }
+      }
+      .right-box {
+        width: 24%;
+        padding: 36px 48px;
+        .row01 {
+          // background-color: slategray;
+          width: 100%;
+          a {
+            color: white;
+            text-decoration: none;
+            &:action {
+              text-emphasis: none;
+            }
+            .to-portfolio {
+              background-color: #FE696A;
+              text-align: center;
+              font-size: 16px;
+              font-weight: 700;
+              padding: 12px;
+              margin: 12px 0;
+              border-radius: 8px;
+              box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(254,105,106,0.9);
+              &:hover {
+                background-color: rgb(255, 100, 82);
+                box-shadow: none;
+              }
+            }
+          }
+        } 
+        .row02 {
+          // background-color: sienna;
+          padding: 12px 8px;
+          width: 100%;
+          .title {
+            padding: 4px 0;
+            margin-top: 24px;
+            font-size: 18px;
+            font-weight: 300;
+            display: flex;
+            .MuiSvgIcon-root {
+              padding-top: 2px;
+              font-size: 24px;
+              color: rgb(255, 119, 149);
+            }
+            p {
+              margin: 0 8px;
+            }
+          }
+          .list-title {
+            padding: 4px 24px;
+            font-size: 16px;
+            font-weight: 300;
+            display: flex;
+            // align-items: center;
+            .MuiSvgIcon-root {
+              padding-top: 2px;
+              font-size: 16px;
+              color: rgb(49, 211, 130);
+            }
+            p {
+              margin: 0 8px;
+            }
+          }
+        }
+        .row03 {
+          background-color: seagreen;
+          height: 60px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 .search-window-box-pc {
   display: flex;
   justify-content: center;

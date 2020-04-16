@@ -12,7 +12,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/portfolio" component={PortfolioMain} />
+        <Route exact path="/portfolio/:id" component={PortfolioMain} />
         {/* <Route path="/events/new" component={eventsNew} /> */}
         {/* <Route path="/events/:id" component={eventsShow} /> */}
       </Switch>

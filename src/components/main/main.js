@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ContentBox01 from './contentBox01';
 import ContentBox02 from './contentBox02';
 import ContentBox03 from './contentBox03';

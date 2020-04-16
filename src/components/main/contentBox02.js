@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MenuCard from './menuCard';
-import pic01 from '../../images/content02-1.jpg';
+import pic01 from '../../images/portfolio01-1.jpg';
 import pic02 from '../../images/content02-2.jpg';
-import pic03 from '../../images/content02-3.jpg';
+import pic03 from '../../images/portfolio01-3.jpg';
 
 import MediaQuery from "react-responsive";
 
@@ -13,7 +13,6 @@ function ContentBox02(props) {
         { pic: pic02, title: 'Project Devices Showcase', subTitle: 'by Createx Std. in Graphics', stars: 5, sales: 95, price: 3000 },
         { pic: pic03, title: 'Business Card Branding Mockup', subTitle: 'by pixels in Graphics', stars: 4, sales: 256, price: 2500 }
     ]
-
     return(
         <>
             <MediaQuery query="(max-width: 767px)">
@@ -48,7 +47,7 @@ function ContentBox02(props) {
                         </div>
                         <div className="flex-menu-area">
                             {
-                                [0,1,2].map((index) => <MenuCard key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />)
+                                [0,1,2].map((index) => <MenuCard key={index.toString()} id={index + 1} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />)
                             }
                         </div>
                     </div>

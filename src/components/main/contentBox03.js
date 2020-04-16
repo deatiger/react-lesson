@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MenuCard from './menuCard';
 import pic01 from '../../images/cnt-01.jpg';
 import pic02 from '../../images/cnt-02.jpg';
