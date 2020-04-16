@@ -15,18 +15,19 @@ function FooterLinks(props) {
         // super(props)
     // }
 
-    const icons = [
-        { twitter: <TwitterIcon /> },
-        { facebook: <FacebookIcon />},
-        { instagram: <InstagramIcon />},
-        { linkedIn: <LinkedInIcon />},
-        { mail: <MailOutlineIcon />},
-        { twitter: <TwitterIcon fontSize="small"/> },
-        { facebook: <FacebookIcon fontSize="small"/>},
-        { instagram: <InstagramIcon fontSize="small"/>},
-        { linkedIn: <LinkedInIcon fontSize="small"/>},
-        { mail: <MailOutlineIcon fontSize="small"/>}
-    ]
+    const icons = {
+        twitter: <TwitterIcon/>,
+        facebook: <FacebookIcon/>,
+        instagram: <InstagramIcon/>,
+        linkedIn: <LinkedInIcon/>,
+        mail: <MailOutlineIcon/>,
+        twitterSmall: <TwitterIcon fontSize="small"/>,
+        facebookSmall: <FacebookIcon fontSize="small"/>,
+        instagramSmall: <InstagramIcon fontSize="small"/>,
+        linkedInSmall: <LinkedInIcon fontSize="small"/>,
+        mailSmall: <MailOutlineIcon fontSize="small"/>
+    }
+
     
     // render(){
         return(
@@ -44,11 +45,11 @@ function FooterLinks(props) {
                                 <p><span className="number">897</span>Vendors</p>
                             </div>
                             <div className="sns-links-area">
-                                <SnsBox icon={icons[5].twitter} fontSize="small"/>
-                                <SnsBox icon={icons[6].facebook} />
-                                <SnsBox icon={icons[7].instagram} />
-                                <SnsBox icon={icons[8].linkedIn} />
-                                <SnsBox icon={icons[9].mail} />
+                                <SnsBox icon={icons.twitterSmall} fontSize="small"/>
+                                <SnsBox icon={icons.facebookSmall} />
+                                <SnsBox icon={icons.instagramSmall} />
+                                <SnsBox icon={icons.linkedInSmall} />
+                                <SnsBox icon={icons.mailSmall} />
                             </div>
                         </div>
                         <div className="bottom-box">
@@ -86,11 +87,11 @@ function FooterLinks(props) {
                                 <span className="number">897</span>Vendors
                             </div>
                             <div className="sns-links-area">
-                                <SnsBox icon={icons[0].twitter} />
-                                <SnsBox icon={icons[1].facebook} />
-                                <SnsBox icon={icons[2].instagram} />
-                                <SnsBox icon={icons[3].linkedIn} />
-                                <SnsBox icon={icons[4].mail} />
+                                <SnsBox icon={icons.twitter} />
+                                <SnsBox icon={icons.facebook} />
+                                <SnsBox icon={icons.instagram} />
+                                <SnsBox icon={icons.linkedIn} />
+                                <SnsBox icon={icons.mail} />
                             </div>
                         </div>
                         <div className="right-box-01">

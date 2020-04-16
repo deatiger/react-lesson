@@ -9,19 +9,17 @@ class MenuCard extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            count: 0
+            count: Math.floor( Math.random() * 300)
         }
     }
 
     componentDidMount() {
-        this.setState({
-            count: Math.floor( Math.random() * 300),
-        })
+        document.getElementById("like-count-"+this.props.id).addEventListener('click', this.countUp)
     }
 
-    // componentWillUnmount() {
-    //     document.getElementById('like-count').removeEventListener('click', this.countUp)
-    // }
+    componentWillUnmount() {
+        document.getElementById("like-count-"+this.props.id).removeEventListener('click', this.countUp)
+    }
 
     countUp = () => {
         this.setState({
@@ -43,7 +41,7 @@ class MenuCard extends Component {
                                     <a href="#" className="view-btn">
                                         <span className="icon-view"><VisibilityIcon /></span>
                                     </a>
-                                    <div className="view-btn" onClick={()=> this.countUp()}>
+                                    <div className="view-btn" id={"like-count-"+this.props.id}>
                                         <span className="icon-like"><FavoriteIcon /></span>
                                     </div>
                                 </div>
@@ -75,7 +73,7 @@ class MenuCard extends Component {
                                     <Link to={"/portfolio/" + this.props.id} className="view-btn">
                                         <span className="icon-view"><VisibilityIcon /></span>
                                     </Link>
-                                    <div className="view-btn" onClick={()=> this.countUp()}>
+                                    <div className="view-btn" id={"like-count-"+this.props.id}>
                                         <span className="icon-like"><FavoriteIcon /></span>
                                     </div>
                                 </div>

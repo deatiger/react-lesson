@@ -24,6 +24,20 @@ function ContentBox03(props) {
         { pic: pic08, title: Faker.address.city(), subTitle: 'by ' + Faker.internet.userName(), stars: 4, sales: 256, price: 2500 },
     ]
 
+    let menus = []
+
+    // menuProps.map((value, index) => {
+    //     if (index % 4 === 0) {
+    //         menus.push(<div className="horizontal-list">)
+    //     }
+    //     menus.push(
+    //             <MenuCard key={index.toString()} pic={value.pic} title={value.title} subTitle={value.subTitle}
+    //                       stars={value.stars} sales={value.sales} price={value.price} openModal={() => props.openModal()}/>)
+    //     if (index % 4 === 3) {
+    //        menus.push(</div>)
+    //     }
+    // })
+
     return(
         <>
             <MediaQuery query="(max-width: 767px)">
@@ -32,14 +46,7 @@ function ContentBox03(props) {
                         <div className="title-box">
                             <h3 className="title">The most recent releases</h3>
                         </div>
-                        <div className="horizontal-list">
-                            { 
-                                [0,1,2,3].map((index) => <MenuCard key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
-                            }                        </div>
-                        <div className="horizontal-list">
-                            { 
-                                [4,5,6,7].map((index) => <MenuCard key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
-                            }                        </div>
+                        {menus}
                         <div className="view-more-area">
                             <a href="#" className="view-more-link">
                                 View more service >
@@ -56,12 +63,12 @@ function ContentBox03(props) {
                         </div>
                         <div className="flex-menu-area">
                             { 
-                                [0,1,2,3].map((index) => <MenuCard key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
+                                [0,1,2,3].map((index) => <MenuCard id={index.toString()} key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />)
                             }
                         </div>
                         <div className="flex-menu-area">
                             { 
-                                [4,5,6,7].map((index) => <MenuCard key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />) 
+                                [4,5,6,7].map((index) => <MenuCard id={index.toString()} key={index.toString()} pic={menuProps[index].pic} title={menuProps[index].title} subTitle={menuProps[index].subTitle} stars={menuProps[index].stars} sales={menuProps[index].sales} price={menuProps[index].price} openModal={()=> props.openModal()} />)
                             }                        
                         </div>
                         <div className="view-more-area">
