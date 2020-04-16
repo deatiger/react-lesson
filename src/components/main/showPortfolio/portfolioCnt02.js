@@ -39,7 +39,7 @@ export default function PortfolioCnt02(props) {
                         </div>
                         <div className="row02">
                             <div className="title"><div><RadioButtonCheckedIcon /></div><p>言語</p></div>
-                            <div className="list-title"><div><CheckCircleOutlineIcon /></div><p>Ruby</p></div>
+                            <div className="list-title"><div><CheckCircleOutlineIcon /></div><p>{props.language}</p></div>
                             <div className="list-title"><div><CheckCircleOutlineIcon /></div><p>HTML</p></div>
                             <div className="list-title"><div><CheckCircleOutlineIcon /></div><p>CSS</p></div>
                             <div className="list-title"><div><CheckCircleOutlineIcon /></div><p>JavaScript</p></div>

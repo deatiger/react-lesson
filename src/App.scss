@@ -997,7 +997,7 @@ footer {
             width: 100%;
             border-radius: 8px;
             object-fit: cover;
-            object-position: 70% 0%;
+            object-position: 0% 0%;
           }
         }
         .row02 {
@@ -1011,6 +1011,7 @@ footer {
             border-radius: 8px;
             img {
               object-fit: cover;
+              object-position: 50% 0%;
               height: 100%;
               width: 100%;
               border-radius: 8px;
@@ -1023,6 +1024,7 @@ footer {
             border-radius: 8px;
             img {
               object-fit: cover;
+              object-position: 0% 0%;
               height: 100%;
               width: 100%;
               border-radius: 8px;
